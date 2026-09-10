@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   type: vless
-  server: cf10.466688.xyz
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  server: 103.75.119.126
+  port: 2087
+  uuid: 731f177e-00aa-480c-b935-661456139a32
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: mia12.pages.dev
   network: ws
   ws-opts:
-    path: /go.php?ed=2560@https://t.me/QiangLieTuiJian
+    path: /7586c69d3dc9
     headers:
-      Host: mia12.pages.dev
+      Host: 103.75.119.126
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   type: vless
   server: 103.75.119.126
@@ -31,33 +30,6 @@ proxies:
     path: /7586c69d3dc9
     headers:
       Host: 103.75.119.126
-- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /7586c69d3dc9
-    headers:
-      Host: 103.75.119.126
-- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
