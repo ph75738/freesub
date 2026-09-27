@@ -6,17 +6,12 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: str.paydayloansmesquitetx.com
-  port: 2565
-  uuid: 5463f486-3cbf-4d68-9054-b8d12b89d8fd
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket?ed=2560
-    headers:
-      Host: play.google.com
 proxy-groups:
 - name: PROXIES
   type: select
